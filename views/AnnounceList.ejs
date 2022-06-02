@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Anunturi</title>
+    </head>
+    <body>
+        <% for(var i=0; i<announces.length; i++) {
+            %>
+            <a href="/ViewAnnounce?announceID=<%=announces[i].AnnounceID%>">
+                <img src="<%=announces[i].ImageLink%>" width="100" height="100"/>
+                Titlu: <%=announces[i].Title%><br>
+                Descriere: <%=announces[i].Description%><br>
+                Pret: <%=announces[i].Price%><br>
+                Moneda: <%=announces[i].Currency%><br>
+                Telefon: <%=announces[i].Phone%><br>
+                Email: <%=announces[i].Email%><br>
+                <br>
+            </a>
+        <% } %>
+    </body>
+</html>

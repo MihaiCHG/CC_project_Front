@@ -1,0 +1,27 @@
+<form method="POST" action="AddAnnounce" enctype="multipart/form-data">
+    <label>Titlu:</label>
+    <input type="text" name="Title"/>
+
+    <label>Description:</label>
+    <textarea name="Description" rows="4" cols="50"></textarea>
+
+    <label>Pret:</label>
+    <input type="number" name="Price"/>
+
+    <label>Moneda:</label>
+    <select name="Currency">
+        <option value="lei">Lei</option>
+        <option value="eur">Euro</option>
+      </select>
+
+    <label>Email:</label>
+    <input type="text" name="Email"/>
+
+    <label>Telefon:</label>
+    <input type="text" name="Phone"/>
+
+    <label>Imagine:</label>
+    <input type="file" name="AnnounceImage"/>
+
+<input type="submit" name="submit" value="Upload">
+</form>

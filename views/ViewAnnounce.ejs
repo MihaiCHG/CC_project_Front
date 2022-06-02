@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Anunturi</title>
+    </head>
+    <body>
+        <img src="<%=announce.ImageLink%>" width="1000" height="1000"/><br>
+        Titlu: <%=announce.Title%><br>
+        Descriere: <%=announce.Description%><br>
+        Pret: <%=announce.Price%><br>
+        Moneda: <%=announce.Currency%><br>
+        Telefon: <%=announce.Phone%><br>
+        Email: <%=announce.Email%><br>
+        <form method="POST" action="/SendMessage">
+            Scrie aici mesajul:
+            <textarea name="Message" rows="2" cols="50"></textarea>
+            <input type="submit" name="submit" value="Send">
+        </form>
+        <br>  
+    </body>
+</html>
