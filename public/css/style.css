@@ -1,0 +1,13 @@
+.navButton{
+    background-color: rgb(140, 192, 240);
+    color: black;
+    padding: 5px; 
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input, textarea{
+    display: block;
+}

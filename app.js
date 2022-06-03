@@ -20,6 +20,10 @@ app.use((error, req, res, next) => {
   console.log('This is the rejected field ->', error.field);
 });
 
+app.get('/addAnnounce', upload.any(), function(req, res){
+
+  res.render('AddAnnounce');
+});
 
 
 app.post('/addAnnounce', upload.any(), function(req, res){
